@@ -1,0 +1,25 @@
+{
+  "name": "claw-server",
+  "version": "1.0.0",
+  "description": "An Express-based Node.js server providing REST API endpoints for the CLAW project.",
+  "main": "Starter/Server.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "keywords": [
+    "Bismillah"
+  ],
+  "author": "Mashfik/Bonon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1"
+  }
+}
