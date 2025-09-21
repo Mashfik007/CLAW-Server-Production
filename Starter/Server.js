@@ -17,7 +17,7 @@ morgan.token('remote-ip', (req) => {
 // ------------------ Middleware ------------------
 
 // Security headers
-app.use(helmet());
+// app.use(helmet());
 
 // Enable CORS for specific origins
 app.use(

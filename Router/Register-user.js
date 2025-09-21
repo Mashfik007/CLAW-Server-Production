@@ -34,10 +34,9 @@ router.post('/V1/User-Register', JWt_Verifier, async (req, res, next) => {
 
   // *Write updated array back to file
   await fs.writeFile(filePath, JSON.stringify(users, null, 2), 'utf8');
-  await JWT_Generator(newUser)
+  const jwtToken = await JWT_Generator(newUser)
   next()
-  return res.status(201).json({ message: "User registered successfully", user: newUser });
-
+  return res.cookie("token", jwtToken, { httpOnly: true, secure: false, sameSite: "strict", maxAge: 60 * 60 * 1000 }).status(201).json({ message: "User registered successfully", user: newUser });
  } catch (err) {
   //* Handle file not found separately
   if (err.code === 'ENOENT') {
