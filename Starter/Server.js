@@ -55,6 +55,8 @@ app.get('/', (req, res, next) => {
 // * Register user
 const Register_user = require('../Router/Register-user')
 app.use(Register_user)
+const image = require('../Router/IMage Sample')
+app.use(image)
 
 
 

@@ -23,7 +23,8 @@ class UserSchema {
    password: User.password, // already hashed
    Role: User.Role || "",
    DOB: null,
-   Gender: User.Gender || ""
+   Gender: User.Gender || "",
+   NID: User.nid || ""
   };
 
 
@@ -52,7 +53,6 @@ class UserSchema {
   // Pass the hashed password to constructor
   return new UserSchema({
    User: { ...data.User, password: hashedPassword },
-   Profession: data.Profession || {},
    Location: data.Location || {}
   });
  }
