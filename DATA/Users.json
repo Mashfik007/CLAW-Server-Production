@@ -1,6 +1,22 @@
 [
   {
-    "id": "f3a18e7d-c47b-4eb8-b9e9-f00182e1286b",
-    "phone": "+88001718010427"
+    "_id": "aef6074a-83d7-454f-b93b-7138d39dfd9a",
+    "User": {
+      "name": "John Doe",
+      "phone": "+88001712345671",
+      "password": "$2b$10$MpMsW.DtHFt4PlR2K8pijuN1EfQuMZYZx/HoGxx3sz4qODcdfRTZ.",
+      "Role": "Civil",
+      "DOB": null,
+      "Gender": "male"
+    },
+    "Location": {
+      "houseNumber": "123/A",
+      "roadNumber": "45",
+      "division": "Dhaka",
+      "district": "Gazipur",
+      "upazila": "Sreepur",
+      "postalCode": "1740"
+    },
+    "createdAt": "Sep 21, 2025, 01:18 PM"
   }
 ]
